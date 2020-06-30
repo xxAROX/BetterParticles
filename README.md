@@ -1,5 +1,4 @@
 # BetterParticles
-# !!!! NOT TESTED !!!!
 ### Usage:
 ```php
 $particle = new \xxAROX\BetterParticles\BlueFlameParticle(new \pocketmine\math\Vector3(128,12,128));

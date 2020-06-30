@@ -1,0 +1,8 @@
+name: "BetterParticles"
+author: "xxAROX"
+website: "https://github.com/xxAROX/"
+version: "1.0"
+description: "BetterParticles plugin by xxAROX."
+
+api: [ "3" ]
+main: xxAROX\BetterParticles\BetterParticles

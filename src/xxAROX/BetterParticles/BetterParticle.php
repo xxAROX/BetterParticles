@@ -46,12 +46,14 @@ abstract class BetterParticle{
 	 */
 	public function spawn(): void{
 		$pk = new SpawnParticleEffectPacket();
-		$pk->particleName = self::TYPE_ID;
+		$pk->particleName = static::TYPE_ID;
 		$pk->position = $this->vector3;
 
 		if (is_array($this->players)) {
 			foreach ($this->players as $player) {
-				$player->sendDataPacket($pk);
+				if ($player instanceof Player) {
+					$player->sendDataPacket($pk);
+				}
 			}
 		} else {
 			foreach (Server::getInstance()->getOnlinePlayers() as $onlinePlayer) {

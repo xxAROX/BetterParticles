@@ -1,1 +1,1 @@
-"# BetterParticles" 
+# BetterParticles
